@@ -186,6 +186,7 @@ figcaption {
 }
 
 .paragraph-tiny {
+  display: block;
   font-size: 12px;
   line-height: 20px;
 }
@@ -1294,6 +1295,10 @@ figcaption {
   text-align: left;
 }
 
+.long-feature-block.datehide {
+  display: none;
+}
+
 .left-feature-icon {
   position: absolute;
   left: 0px;
@@ -1316,6 +1321,10 @@ figcaption {
 
 .spacer {
   height: 30px;
+}
+
+.course-timings {
+  display: block;
 }
 
 .price {
@@ -1394,6 +1403,14 @@ figcaption {
 
 .week-row-col {
   padding-bottom: 20px;
+}
+
+.div-block {
+  display: block;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 auto;
+  -ms-flex: 0 auto;
+  flex: 0 auto;
 }
 
 @media screen and (max-width: 991px) {
