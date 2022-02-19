@@ -158,8 +158,13 @@ figcaption {
   background-color: #fffff9;
 }
 
+.section.cc-store-home-wrap {
+  padding-top: 60px;
+}
+
 .section.syllabus {
   padding-top: 80px;
+  padding-bottom: 60px;
 }
 
 .styleguide-block {
@@ -234,11 +239,13 @@ figcaption {
 
 .button.cc-jumbo-button {
   padding: 16px 35px;
+  border-radius: 10px;
   font-size: 14px;
   line-height: 26px;
 }
 
 .button.cc-jumbo-button.cc-jumbo-white {
+  display: none;
   border-style: solid;
   border-width: 2px;
   border-color: #c14a34;
@@ -257,7 +264,9 @@ figcaption {
 .button.cc-contact-us {
   position: relative;
   z-index: 5;
+  border-radius: 10px;
   background-color: #c14a34;
+  text-align: center;
 }
 
 .button.cc-white-button {
@@ -407,10 +416,7 @@ figcaption {
   right: 0%;
   bottom: 0%;
   z-index: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -452,6 +458,18 @@ figcaption {
   -ms-flex-align: center;
   align-items: center;
   background-color: transparent;
+}
+
+.navigation.masterclass {
+  position: fixed;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: auto;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #e7e7b6;
+  background-color: #fff;
 }
 
 .navigation-item {
@@ -1285,7 +1303,7 @@ figcaption {
 
 .long-feature-block {
   position: relative;
-  width: 45%;
+  width: 75%;
   margin-top: 25px;
   margin-right: auto;
   margin-left: auto;
@@ -1296,7 +1314,7 @@ figcaption {
 }
 
 .long-feature-block.datehide {
-  display: none;
+  display: block;
 }
 
 .left-feature-icon {
@@ -1328,7 +1346,7 @@ figcaption {
 }
 
 .price {
-  display: none;
+  display: block;
 }
 
 .column {
@@ -1381,6 +1399,7 @@ figcaption {
   color: #000;
   font-size: 19px;
   font-weight: 600;
+  text-align: center;
 }
 
 .color-block-paragraph {
@@ -1402,7 +1421,7 @@ figcaption {
 }
 
 .week-second-row {
-  margin-bottom: 100px;
+  margin-bottom: 40px;
 }
 
 .list {
@@ -1426,10 +1445,56 @@ figcaption {
   height: 100%;
 }
 
+.text-block {
+  font-size: 22px;
+  font-weight: 400;
+  letter-spacing: 0px;
+  text-transform: capitalize;
+}
+
+.text-block.register {
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+.bold-text {
+  font-weight: 600;
+}
+
+.agenda {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  text-align: center;
+}
+
+.who {
+  width: 50%;
+  margin-right: auto;
+  margin-bottom: 20px;
+  margin-left: auto;
+  text-align: center;
+}
+
+.image-2 {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.trainer-img {
+  width: 25%;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 50%;
+}
+
 @media screen and (max-width: 991px) {
   .section.cc-cta {
     padding-right: 0px;
     padding-left: 0px;
+  }
+
+  .section.cc-store-home-wrap {
+    padding-top: 140px;
   }
 
   .styleguide-block {
@@ -1444,7 +1509,7 @@ figcaption {
   }
 
   .button.cc-contact-us {
-    display: none;
+    display: block;
   }
 
   .heading-jumbo {
@@ -1879,6 +1944,10 @@ figcaption {
     line-height: 52px;
   }
 
+  .section.cc-store-home-wrap {
+    padding-top: 140px;
+  }
+
   .paragraph-bigger.cc-bigger-light {
     font-size: 18px;
   }
@@ -1888,6 +1957,13 @@ figcaption {
     line-height: 25px;
   }
 
+  .button.cc-contact-us {
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+    text-align: center;
+  }
+
   .rich-text {
     width: 100%;
     max-width: none;
@@ -1895,6 +1971,7 @@ figcaption {
 
   .paragraph-light {
     font-size: 18px;
+    text-align: center;
   }
 
   .paragraph-light.right.mobile {
@@ -1913,7 +1990,11 @@ figcaption {
   .heading-jumbo-small {
     font-size: 22px;
     line-height: 35px;
-    text-align: left;
+    text-align: center;
+  }
+
+  .logo-link {
+    width: 100%;
   }
 
   .menu {
@@ -1923,6 +2004,11 @@ figcaption {
   .navigation {
     padding-right: 20px;
     padding-left: 20px;
+  }
+
+  .navigation.masterclass {
+    position: fixed;
+    background-color: #fffff9;
   }
 
   .menu-button {
@@ -2010,8 +2096,20 @@ figcaption {
     line-height: 19px;
   }
 
+  .old-price {
+    text-align: center;
+  }
+
+  .new-price {
+    text-align: center;
+  }
+
   .color-block {
     padding: 20px;
+  }
+
+  .week-second-row {
+    margin-bottom: 0px;
   }
 
   .list {
@@ -2020,6 +2118,15 @@ figcaption {
 
   .list-item {
     font-size: 17px;
+  }
+
+  .text-block.register {
+    font-size: 18px;
+  }
+
+  .agenda {
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 }
 
