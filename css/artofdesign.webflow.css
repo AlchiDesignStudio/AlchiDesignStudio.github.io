@@ -147,6 +147,7 @@ figcaption {
 }
 
 .section.cc-cta {
+  display: block;
   width: 75%;
   margin-right: auto;
   margin-left: auto;
@@ -156,6 +157,10 @@ figcaption {
   border-width: 1px;
   border-color: #e7e7b6;
   background-color: #fffff9;
+}
+
+.section.cc-cta.pricing {
+  display: none;
 }
 
 .section.cc-store-home-wrap {
@@ -238,6 +243,7 @@ figcaption {
 }
 
 .button.cc-jumbo-button {
+  display: block;
   padding: 16px 35px;
   border-radius: 10px;
   font-size: 14px;
@@ -1399,6 +1405,10 @@ figcaption {
   color: #000;
   font-size: 19px;
   font-weight: 600;
+  text-align: left;
+}
+
+.color-block-title.trainer {
   text-align: center;
 }
 
@@ -1945,7 +1955,7 @@ figcaption {
   }
 
   .section.cc-store-home-wrap {
-    padding-top: 140px;
+    padding-top: 180px;
   }
 
   .paragraph-bigger.cc-bigger-light {
